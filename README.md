@@ -1,4 +1,4 @@
-FMS – Flight Management System (Microservices Architecture)
+**FMS – Flight Management System (Microservices Architecture)**
 
 A scalable Flight Management System built using Spring Boot Microservices, featuring flight search, booking, notifications, seat reservation, and distributed communication using Feign, RabbitMQ, Docker, Circuit Breaker, and MySQL.
 
