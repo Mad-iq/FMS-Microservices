@@ -1,0 +1,11 @@
+package com.flight.model;
+
+public enum City {
+    DELHI, 
+    MUMBAI, 
+    KOLKATA, 
+    CHENNAI,
+    BENGALURU, 
+    HYDERABAD, 
+    PUNE
+}
