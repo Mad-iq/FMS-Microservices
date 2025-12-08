@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "df63c513-8103-4de0-aa63-c201b8691767",
+		"name": "FMS Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34987518"
+	},
+	"item": [
+		{
+			"name": "Add inventory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"airlineName\": \"IndiGo\",\r\n  \"source\": \"DELHI\",\r\n  \"destination\": \"MUMBAI\",\r\n  \"startDate\": \"2025-12-10T09:30:00\",\r\n  \"endDate\": \"2025-12-10T11:45:00\",\r\n  \"availableSeats\": 10,\r\n  \"ticketPrice\": 4500,\r\n  \"mealStatus\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/FLIGHT-MICROSERVICE/api/flight",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"FLIGHT-MICROSERVICE",
+						"api",
+						"flight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Flights",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"source\": \"DELHI\",\r\n  \"destination\": \"MUMBAI\",\r\n  \"journeyDate\": \"2025-12-10\",\r\n  \"numberOfPassengers\": 2,\r\n  \"roundTrip\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/flight/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"flight",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"debashritamandal852@gmail.com\",\r\n  \"name\": \"Debashrita Mandal\",\r\n  \"numberOfSeats\": 2,\r\n  \"passengers\": [\r\n    { \"name\": \"Debashrita Mandal\", \"gender\": \"F\", \"age\": 21 },\r\n    { \"name\": \"Aahana Banerjee\", \"gender\": \"F\", \"age\": 22 }\r\n  ],\r\n  \"mealPreference\": \"VEG\",\r\n  \"seatNumbers\": [\"1A\", \"1B\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/flight/booking/79448598",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"flight",
+						"booking",
+						"79448598"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by pnr",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/flight/ticket/D4F30643",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"flight",
+						"ticket",
+						"D4F30643"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by mail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/flight/booking/history/debashritamandal852@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"flight",
+						"booking",
+						"history",
+						"debashritamandal852@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete flights",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"password123\",\r\n  \"role\": \"ADMIN\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let json = pm.response.json();\r",
+							"\r",
+							"if (json && json.token) {\r",
+							"    pm.collectionVariables.set(\"jwt\", json.token);\r",
+							"    console.log(\"Saved JWT:\", json.token);\r",
+							"} else {\r",
+							"    console.log(\"No token found in response.\");\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"aahana\",\r\n  \"password\": \"password123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "jwt",
+			"value": ""
+		}
+	]
+}
