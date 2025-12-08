@@ -1,8 +1,9 @@
-**Flight Booking Microservices**
+# Flight Booking Microservices
 
-(I have added the logs folder contaning the docker logs for each individual service)
+_(I have added the logs folder containing the docker logs for each individual service)_
 
-A scalable Flight Management System built using Spring Boot Microservices, featuring flight search, booking, notifications, seat reservation, and distributed communication using Feign, RabbitMQ, Docker, Circuit Breaker, and MySQL.
+### A scalable Flight Management System built using Spring Boot Microservices, featuring flight search, booking, notifications, seat reservation, and distributed communication using Feign, RabbitMQ, Docker, Circuit Breaker, and MySQL.
+
 
 This microservices-based Flight Management System uses :
   1. Eureka Service Discovery: For microservice registry
