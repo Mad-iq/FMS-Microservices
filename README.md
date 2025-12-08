@@ -94,7 +94,7 @@ Database Design:
 
 
 
-Docker COnfigurations:
+Docker Configurations:
 
 
 1. Building the docker containers for each microservice
