@@ -1,0 +1,65 @@
+2025-12-08T16:36:12.585Z  INFO 1 --- [service_registry_quizapp] [           main] c.e.d.ServiceRegistryQuizappApplication  : Starting ServiceRegistryQuizappApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-08T16:36:12.644Z  INFO 1 --- [service_registry_quizapp] [           main] c.e.d.ServiceRegistryQuizappApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-12-08T16:36:23.554Z  INFO 1 --- [service_registry_quizapp] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6bbb96d6-52a4-398e-8f64-e461d2cecbb1
+2025-12-08T16:36:25.202Z  INFO 1 --- [service_registry_quizapp] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
+2025-12-08T16:36:25.314Z  INFO 1 --- [service_registry_quizapp] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-08T16:36:25.316Z  INFO 1 --- [service_registry_quizapp] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-08T16:36:25.459Z  INFO 1 --- [service_registry_quizapp] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 11926 ms
+2025-12-08T16:36:31.283Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-12-08T16:36:31.285Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-12-08T16:36:32.102Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-12-08T16:36:32.103Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-12-08T16:36:32.841Z  INFO 1 --- [service_registry_quizapp] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-08T16:36:36.701Z  WARN 1 --- [service_registry_quizapp] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-08T16:36:36.852Z  INFO 1 --- [service_registry_quizapp] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-08T16:36:36.983Z  INFO 1 --- [service_registry_quizapp] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-08T16:36:36.984Z  INFO 1 --- [service_registry_quizapp] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-12-08T16:36:36.994Z  INFO 1 --- [service_registry_quizapp] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1765211796991 with initial instances count: 0
+2025-12-08T16:36:37.319Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-12-08T16:36:37.354Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2025-12-08T16:36:38.373Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-12-08T16:36:38.373Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-12-08T16:36:38.374Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-12-08T16:36:38.374Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-12-08T16:36:38.751Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2025-12-08T16:36:38.824Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-12-08T16:36:38.824Z  INFO 1 --- [service_registry_quizapp] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-12-08T16:36:38.893Z  INFO 1 --- [service_registry_quizapp] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-08T16:36:39.196Z  INFO 1 --- [service_registry_quizapp] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE_REGISTRY_QUIZAPP with eureka with status UP
+2025-12-08T16:36:39.324Z  INFO 1 --- [service_registry_quizapp] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-12-08T16:36:39.325Z  INFO 1 --- [service_registry_quizapp] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-12-08T16:36:39.326Z  INFO 1 --- [service_registry_quizapp] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-12-08T16:36:39.326Z  INFO 1 --- [service_registry_quizapp] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-12-08T16:36:39.327Z  INFO 1 --- [service_registry_quizapp] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-12-08T16:36:39.347Z  INFO 1 --- [service_registry_quizapp] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-12-08T16:36:39.400Z  INFO 1 --- [service_registry_quizapp] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8761 (http) with context path '/'
+2025-12-08T16:36:39.416Z  INFO 1 --- [service_registry_quizapp] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2025-12-08T16:36:39.510Z  INFO 1 --- [service_registry_quizapp] [           main] c.e.d.ServiceRegistryQuizappApplication  : Started ServiceRegistryQuizappApplication in 31.79 seconds (process running for 39.766)
+2025-12-08T16:36:41.953Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08T16:36:41.980Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-08T16:36:42.012Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2025-12-08T16:37:39.342Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2025-12-08T16:37:44.916Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIG-SERVER-QUIZAPP/36de2b47ddad:config-server-quizapp:8888 with status UP (replication=false)
+2025-12-08T16:37:47.346Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIG-SERVER-QUIZAPP/36de2b47ddad:config-server-quizapp:8888 with status UP (replication=true)
+2025-12-08T16:38:04.565Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/f2da96b68abf:api-gateway:8765 with status UP (replication=false)
+2025-12-08T16:38:05.131Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/f2da96b68abf:api-gateway:8765 with status UP (replication=true)
+2025-12-08T16:38:39.342Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 23ms
+2025-12-08T16:39:04.559Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance FLIGHT-MICROSERVICE/2fec3f73ae95:FLIGHT-MICROSERVICE with status UP (replication=false)
+2025-12-08T16:39:04.998Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance FLIGHT-MICROSERVICE/2fec3f73ae95:FLIGHT-MICROSERVICE with status UP (replication=true)
+2025-12-08T16:39:39.344Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 26ms
+2025-12-08T16:40:03.493Z  INFO 1 --- [service_registry_quizapp] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BOOKING-MICROSERVICE/01582994949c:BOOKING-MICROSERVICE with status UP (replication=false)
+2025-12-08T16:40:04.068Z  INFO 1 --- [service_registry_quizapp] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BOOKING-MICROSERVICE/01582994949c:BOOKING-MICROSERVICE with status UP (replication=true)
+2025-12-08T16:40:39.344Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 22ms
+2025-12-08T16:41:39.344Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-12-08T16:42:39.346Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2025-12-08T16:43:39.347Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2025-12-08T16:44:39.347Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-12-08T16:45:39.347Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-12-08T16:46:39.348Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2025-12-08T16:47:39.348Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2025-12-08T16:48:39.348Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2025-12-08T16:49:39.348Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-12-08T16:50:39.351Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2025-12-08T16:51:38.824Z  INFO 1 --- [service_registry_quizapp] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
+2025-12-08T16:51:39.348Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 31ms
+2025-12-08T16:52:39.350Z  INFO 1 --- [service_registry_quizapp] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms

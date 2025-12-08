@@ -1,0 +1,167 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: De@763071
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - fms-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-pDe@763071"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: fms_user
+      RABBITMQ_DEFAULT_PASS: fms_password
+      RABBITMQ_DEFAULT_VHOST: /fms
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - fms-net
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+
+  service-registry:
+    build: ./service_registry
+    container_name: service-registry
+    ports:
+      - "8761:8761"
+    volumes:
+      - ./logs/service-registry:/app/logs
+    networks:
+      - fms-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8761/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  config-server:
+    build:
+      context: ./config-server-quizapp
+      dockerfile: Dockerfile
+    container_name: config-server
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./logs/config-server:/app/logs
+    depends_on:
+      service-registry:
+        condition: service_healthy
+    networks:
+      - fms-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/actuator/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+    environment:
+      SPRING_CONFIG_IMPORT: ""
+
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "8765:8765"
+    volumes:
+      - ./logs/api-gateway:/app/logs
+    depends_on:
+      mysql:
+        condition: service_healthy
+      service-registry:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/gatewaydb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: De@763071
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka/
+    networks:
+      - fms-net
+
+  flight-microservice:
+    build: ./flight-microservice
+    container_name: flight-microservice
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./logs/flight:/app/logs
+    depends_on:
+      config-server:
+        condition: service_healthy
+      mysql:
+        condition: service_healthy
+      service-registry:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: FLIGHT-MICROSERVICE
+      SPRING_CONFIG_IMPORT: optional:configserver:http://config-server:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka/
+    networks:
+      - fms-net
+
+  booking-microservice:
+    build: ./booking-microservice
+    container_name: booking-microservice
+    ports:
+      - "8082:8082"
+    volumes:
+      - ./logs/booking:/app/logs
+    depends_on:
+      config-server:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+      mysql:
+        condition: service_healthy
+      service-registry:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: BOOKING-MICROSERVICE
+      SPRING_CONFIG_IMPORT: optional:configserver:http://config-server:8888
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka/
+    networks:
+      - fms-net
+
+  notification-microservice:
+    build: ./notification-microservice
+    container_name: notification-microservice
+    ports:
+      - "8083:8083"
+    volumes:
+      - ./logs/notification:/app/logs
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+      SPRING_RABBITMQ_USERNAME: fms_user
+      SPRING_RABBITMQ_PASSWORD: fms_password
+      SPRING_RABBITMQ_VIRTUAL_HOST: /fms
+      SPRING_MAIL_USERNAME: debashritamandal852@gmail.com
+      SPRING_MAIL_PASSWORD: "bbml rwmm ctmq lqbi"
+    networks:
+      - fms-net
+
+volumes:
+  mysql-data:
+
+networks:
+  fms-net:
+    driver: bridge
