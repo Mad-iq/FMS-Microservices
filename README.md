@@ -18,7 +18,9 @@ includes comprehensive JUnit + Mockito test coverage with JaCoCo.
 
 System Architecture:
 
-<img width="670" height="476" alt="image" src="https://github.com/user-attachments/assets/b590c8af-24f6-4b0f-b1d5-168faddc59a4" />
+<img width="858" height="757" alt="Screenshot 2025-12-09 011522" src="https://github.com/user-attachments/assets/3a7f6d36-650e-4e98-ba15-2b57951deb96" />
+
+
 
 
 
