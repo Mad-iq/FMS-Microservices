@@ -30,18 +30,23 @@ public class AuthController {
         String username = req.get("username");
         String email = req.get("email");       
         String password = req.get("password");
-        String role = req.getOrDefault("role", "USER").toUpperCase();
+        String reqrole = req.get("role");
 
         if (username == null || email == null || password == null) {
             return ResponseEntity.badRequest()
                     .body(Map.of("error", "username, email and password required"));
         }
+        
+        if (reqrole != null && "ADMIN".equalsIgnoreCase(reqrole)) {
+            return ResponseEntity.status(403)
+                    .body(Map.of("error", "ADMIN role cannot be self-assigned"));
+        }
+        String role = "USER";
 
         try {
             User saved = userService.registerUser(username, email, password, role);
             return ResponseEntity.ok(
                     Map.of(
-                        "id", saved.getId(),
                         "username", saved.getUsername(),
                         "email", saved.getEmail(),
                         "role", saved.getRole()

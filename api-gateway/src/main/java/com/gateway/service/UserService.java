@@ -18,6 +18,9 @@ public class UserService {
 
     public User registerUser(String username, String email, String rawPassword, String role) {
 
+    	if (!role.equals("USER")) {
+            throw new IllegalArgumentException("Invalid role for public registration");
+        }
         if (userRepository.existsByUsername(username)) {
             throw new IllegalArgumentException("Username already taken");
         }
