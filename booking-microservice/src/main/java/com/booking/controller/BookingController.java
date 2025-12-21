@@ -46,5 +46,13 @@ public class BookingController {
  public ResponseEntity<?> cancelBooking(@PathVariable String pnr) {
      return ResponseEntity.ok(bookingService.cancelBooking(pnr));
  }
+ 
+ //new one
+ @GetMapping("/booking/history/details/{email}")
+ public ResponseEntity<?> getBookingHistoryWithDetails(@PathVariable String email) {
+     return ResponseEntity.ok(
+         bookingService.getBookingHistoryWithDetails(email)
+     );
+ }
 }
 

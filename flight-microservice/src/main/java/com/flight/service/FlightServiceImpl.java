@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
@@ -78,6 +79,20 @@ public class FlightServiceImpl implements FlightService {
                 "flightId", flightId
         );
     }
+    
+    @Override
+    public List<Map<String, Object>> addMultipleFlights(List<AddFlightRequest> requests) {
+
+        List<Map<String, Object>> responses = new ArrayList<>();
+        for (AddFlightRequest req : requests) {
+            Map<String, Object> result = addFlight(req);
+            responses.add(result);
+        }
+
+        return responses;
+    }
+
+
 
     @Override
     public Map<String, Object> searchFlights(SearchFlightRequest req) {

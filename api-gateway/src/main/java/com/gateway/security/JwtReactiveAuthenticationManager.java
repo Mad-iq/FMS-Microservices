@@ -1,3 +1,4 @@
+//Given some authentication data, can you verify it and return an authenticated user
 package com.gateway.security;
 
 import org.springframework.security.authentication.ReactiveAuthenticationManager;

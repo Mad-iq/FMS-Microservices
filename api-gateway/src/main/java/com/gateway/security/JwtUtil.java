@@ -36,9 +36,9 @@ public class JwtUtil {
     public boolean validateToken(String token) {
         try {
             Jwts.parserBuilder()
-                    .setSigningKey(getSigningKey())
+                    .setSigningKey(getSigningKey())  //gives the parser the secret key used to sign the JWT.
                     .build()
-                    .parseClaimsJws(token);
+                    .parseClaimsJws(token); //Checks signature matcheskey
             return true;
         } catch (Exception ex) {
             return false;
@@ -55,7 +55,7 @@ public class JwtUtil {
     }
 
     public String extractRole(String token) {
-        Claims claims = Jwts.parserBuilder()
+        Claims claims = Jwts.parserBuilder()  //parserbuilder is thread safe
                 .setSigningKey(getSigningKey())
                 .build()
                 .parseClaimsJws(token)

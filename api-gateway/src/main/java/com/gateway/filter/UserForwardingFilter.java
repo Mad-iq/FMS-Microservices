@@ -1,3 +1,4 @@
+//A Gateway filter that forwards authenticated user details (username, role) as HTTP headers to downstream microservices.
 package com.gateway.filter;
 
 import org.springframework.cloud.gateway.filter.GatewayFilter;
@@ -19,14 +20,12 @@ public class UserForwardingFilter implements GatewayFilter {
             return chain.filter(exchange);
         }
 
-        // Create a MUTATED request (Spring WebFlux safe method)
         var mutatedRequest = exchange.getRequest()
                 .mutate()
                 .header("X-User-Name", username)
                 .header("X-User-Role", role)
                 .build();
 
-        // Build a mutated exchange
         var mutatedExchange = exchange.mutate()
                 .request(mutatedRequest)
                 .build();

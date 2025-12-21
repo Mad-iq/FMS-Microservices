@@ -9,12 +9,29 @@ import org.springframework.security.config.web.server.ServerHttpSecurity;
 import org.springframework.security.web.server.SecurityWebFilterChain;
 import org.springframework.security.web.server.authentication.AuthenticationWebFilter;
 import org.springframework.security.web.server.context.NoOpServerSecurityContextRepository;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.reactive.CorsWebFilter;
+import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 
 @Configuration
 public class SecurityConfig {
 
     @Autowired
     private JwtUtil jwtUtil;
+    
+    @Bean
+    public CorsWebFilter corsWebFilter() {
+        CorsConfiguration config = new CorsConfiguration();
+        config.addAllowedOrigin("http://localhost:4200");
+        config.addAllowedMethod("*");
+        config.addAllowedHeader("*");
+        config.setAllowCredentials(true);
+        
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", config);
+        
+        return new CorsWebFilter(source);
+    }
 
     @Bean
     public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
@@ -22,6 +39,7 @@ public class SecurityConfig {
         JwtReactiveAuthenticationManager authManager = new JwtReactiveAuthenticationManager(jwtUtil);
         JwtServerAuthenticationConverter converter = new JwtServerAuthenticationConverter();
 
+        //call auth manager and set context
         AuthenticationWebFilter jwtFilter = new AuthenticationWebFilter(authManager);
         jwtFilter.setServerAuthenticationConverter(converter);
         jwtFilter.setSecurityContextRepository(NoOpServerSecurityContextRepository.getInstance());
@@ -29,6 +47,7 @@ public class SecurityConfig {
         return http
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
                 .authorizeExchange(ex -> ex
+                		.pathMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .pathMatchers("/auth/**").permitAll()
                         .pathMatchers("/FLIGHT-MICROSERVICE/api/flight/search").permitAll()
                         .pathMatchers(HttpMethod.POST, "/FLIGHT-MICROSERVICE/api/flight").hasRole("ADMIN")

@@ -1,3 +1,4 @@
+//It converts an incoming HTTP request into an Authentication object by extracting the JWT from the Authorization header.
 package com.gateway.security;
 
 import org.springframework.http.HttpHeaders;
@@ -10,7 +11,7 @@ import reactor.core.publisher.Mono;
 public class JwtServerAuthenticationConverter implements ServerAuthenticationConverter {
 
     @Override
-    public Mono<Authentication> convert(ServerWebExchange exchange) {
+    public Mono<Authentication> convert(ServerWebExchange exchange) {  // repr entire http request and response in webflux
 
         String authHeader = exchange.getRequest().getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
 

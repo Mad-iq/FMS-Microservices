@@ -26,21 +26,32 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody Map<String, String> req) {
+
         String username = req.get("username");
+        String email = req.get("email");       
         String password = req.get("password");
         String role = req.getOrDefault("role", "USER").toUpperCase();
 
-        if (username == null || password == null) {
-            return ResponseEntity.badRequest().body(Map.of("error", "username and password required"));
+        if (username == null || email == null || password == null) {
+            return ResponseEntity.badRequest()
+                    .body(Map.of("error", "username, email and password required"));
         }
 
         try {
-            User saved = userService.registerUser(username, password, role);
-            return ResponseEntity.ok(Map.of("id", saved.getId(), "role", saved.getRole()));
+            User saved = userService.registerUser(username, email, password, role);
+            return ResponseEntity.ok(
+                    Map.of(
+                        "id", saved.getId(),
+                        "username", saved.getUsername(),
+                        "email", saved.getEmail(),
+                        "role", saved.getRole()
+                    )
+            );
         } catch (IllegalArgumentException ex) {
-            return ResponseEntity.status(409).body(Map.of("error", ex.getMessage()));
+            return ResponseEntity.status(403).body(Map.of("error", ex.getMessage()));
         }
     }
+
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Map<String, String> req) {

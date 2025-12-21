@@ -1,5 +1,6 @@
 package com.booking.service;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -200,6 +201,7 @@ public class BookingServiceImpl implements BookingService {
         Map<String, Object> resp = new LinkedHashMap<>();
         resp.put("pnr", b.getPnr());
         resp.put("flightId", b.getFlightId());
+        resp.put("totalPrice", b.getTotalPrice());
         resp.put("status", b.getStatus().name());
         resp.put("seatNumbers", b.getSeatNumbers());
         resp.put("passengers", b.getPassengers());
@@ -226,6 +228,24 @@ public class BookingServiceImpl implements BookingService {
     public Map<String, Object> cancelBooking(String pnr) {
         Booking b = bookingRepo.findByPnr(pnr);
         if (b == null) throw new RuntimeException("Booking not found");
+        
+        if (b.getStatus() == BookingStatus.CANCELLED) {
+            throw new RuntimeException("Booking is already cancelled");
+        }
+        
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime journeyTime = b.getTimeOfJourney();
+        
+        if (now.isAfter(journeyTime)) {
+            throw new RuntimeException("Journey has already started. Cancellation not allowed.");
+        }
+        
+        long hoursLeft = Duration.between(now, journeyTime).toHours();
+        if (hoursLeft < 24) {
+            throw new RuntimeException(
+                "Cancellation not allowed within 24 hours of journey time"
+            );
+        }
 
         b.setStatus(BookingStatus.CANCELLED);
         bookingRepo.save(b);
@@ -238,4 +258,28 @@ public class BookingServiceImpl implements BookingService {
 
         return Map.of("pnr", pnr, "message", "Ticket cancelled successfully");
     }
+    
+    @Override
+    public Map<String, Object> getBookingHistoryWithDetails(String email) {
+        List<Booking> bookings = bookingRepo.findByEmail(email);
+        List<Map<String, Object>> result = new ArrayList<>();
+
+        for (Booking b : bookings) {
+            Map<String, Object> flightInfo = safeGetFlightInfo(b.getFlightId());
+            Map<String, Object> bookingMap = new LinkedHashMap<>();
+            bookingMap.put("pnr", b.getPnr());
+            bookingMap.put("numberOfPassengers", b.getPassengers().size());
+            bookingMap.put("totalPrice", b.getTotalPrice());
+            bookingMap.put("journeyDate", b.getTimeOfJourney());
+            bookingMap.put("status", b.getStatus().name());
+            result.add(bookingMap);
+        }
+
+        return Map.of(
+            "email", email,
+            "bookings", result
+        );
+    }
+
+
 }

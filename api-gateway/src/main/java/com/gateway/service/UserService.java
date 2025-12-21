@@ -16,13 +16,20 @@ public class UserService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public User registerUser(String username, String rawPassword, String role) {
+    public User registerUser(String username, String email, String rawPassword, String role) {
+
         if (userRepository.existsByUsername(username)) {
             throw new IllegalArgumentException("Username already taken");
         }
+
+        if (userRepository.existsByEmail(email)) {
+            throw new IllegalArgumentException("Email already registered");
+        }
+
         String hashed = passwordEncoder.encode(rawPassword);
-        User u = new User(username, hashed, role);
-        return userRepository.save(u);
+
+        User user = new User(username, email, hashed, role);
+        return userRepository.save(user);
     }
 
     public Optional<User> findByUsername(String username) {
@@ -33,4 +40,3 @@ public class UserService {
         return passwordEncoder.matches(rawPassword, user.getPassword());
     }
 }
-

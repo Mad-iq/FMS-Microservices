@@ -1,24 +1,23 @@
-test123
-2025-12-08 16:08:39 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
-2025-12-08 16:08:39 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-12-08 16:08:41 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
-2025-12-08 16:08:41 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=a8e6ac4a18124156e122831e4369b04ae0edaab9, state=null
-2025-12-08 16:08:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-08 16:08:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1026 ms. Found 2 JPA repository interfaces.
-2025-12-08 16:08:51 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
-2025-12-08 16:08:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-12-08 16:08:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-12-08 16:08:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
-2025-12-08 16:08:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-12-08 16:08:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 17196 ms
-2025-12-08 16:09:01 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-08 16:09:02 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
-2025-12-08 16:09:03 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-12-08 16:09:09 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-08 16:09:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-12-08 16:09:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c62be3c
-2025-12-08 16:09:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-12-08 16:09:14 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-12-17 16:56:29 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 16:56:30 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 16:56:30 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 16:56:30 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 16:56:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 16:56:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1167 ms. Found 2 JPA repository interfaces.
+2025-12-17 16:56:38 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 16:56:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 16:56:43 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 16:56:43 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 16:56:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 16:56:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13098 ms
+2025-12-17 16:56:45 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 16:56:47 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 16:56:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 16:56:49 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 16:56:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 16:56:51 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@545f0b6
+2025-12-17 16:56:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 16:56:51 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.44
@@ -26,70 +25,70 @@ test123
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-08 16:09:24 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-08 16:09:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-08 16:09:29 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-08 16:09:35 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2025-12-08 16:09:35 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-08 16:09:36 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2025-12-08 16:09:36 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2025-12-08 16:09:36 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:09:36 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
-2025-12-08 16:09:36 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-2025-12-08 16:09:36 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-2025-12-08 16:09:36 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
-2025-12-08 16:09:36 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-2025-12-08 16:09:36 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
-2025-12-08 16:09:36 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-2025-12-08 16:09:41 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
-2025-12-08 16:09:41 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-2025-12-08 16:09:41 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-08 16:09:41 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765210181997 with initial instances count: 2
-2025-12-08 16:09:42 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
-2025-12-08 16:09:42 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765210182090, current=UP, previous=STARTING]
-2025-12-08 16:09:42 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/df8c7492c3b1:FLIGHT-MICROSERVICE: registering service...
-2025-12-08 16:09:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-12-08 16:09:42 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
-2025-12-08 16:09:42 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/df8c7492c3b1:FLIGHT-MICROSERVICE - registration status: 204
-2025-12-08 16:09:42 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 83.89 seconds (process running for 94.423)
-2025-12-08 16:14:36 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:19:36 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:23:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-08 16:23:00 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-12-08 16:23:00 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 37 ms
-2025-12-08 16:24:36 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:29:36 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:34:36 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:35:23 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
-2025-12-08 16:35:23 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765211723541, current=DOWN, previous=UP]
-2025-12-08 16:35:23 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/df8c7492c3b1:FLIGHT-MICROSERVICE: registering service...
-2025-12-08 16:35:23 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-08 16:35:23 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/df8c7492c3b1:FLIGHT-MICROSERVICE - registration status: 204
-2025-12-08 16:35:23 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-12-08 16:35:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-12-08 16:35:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-12-08 16:35:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-12-08 16:35:23 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
-2025-12-08 16:38:12 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
-2025-12-08 16:38:12 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-12-08 16:38:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
-2025-12-08 16:38:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=a8e6ac4a18124156e122831e4369b04ae0edaab9, state=null
-2025-12-08 16:38:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-08 16:38:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1756 ms. Found 2 JPA repository interfaces.
-2025-12-08 16:38:22 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
-2025-12-08 16:38:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-12-08 16:38:25 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-12-08 16:38:25 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
-2025-12-08 16:38:25 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-12-08 16:38:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13266 ms
-2025-12-08 16:38:27 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-08 16:38:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
-2025-12-08 16:38:29 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-12-08 16:38:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-08 16:38:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-12-08 16:38:32 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54737322
-2025-12-08 16:38:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-12-08 16:38:33 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-12-17 16:56:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 16:56:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 16:57:01 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 16:57:06 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 16:57:06 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 16:57:07 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 16:57:07 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 16:57:07 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 16:57:07 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 16:57:07 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 16:57:07 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 16:57:07 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 16:57:07 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 16:57:07 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 16:57:07 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 16:57:10 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 16:57:10 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 16:57:10 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 16:57:10 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765990630831 with initial instances count: 2
+2025-12-17 16:57:10 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 16:57:10 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765990630898, current=UP, previous=STARTING]
+2025-12-17 16:57:10 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/03ca1961dd98:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 16:57:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 16:57:11 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 16:57:11 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 53.715 seconds (process running for 63.086)
+2025-12-17 16:57:11 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/03ca1961dd98:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 16:57:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-17 16:57:50 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-17 16:57:50 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-17 17:02:07 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:07:07 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:12:07 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:17:07 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:22:07 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:24:30 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 17:24:30 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765992270753, current=DOWN, previous=UP]
+2025-12-17 17:24:30 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/03ca1961dd98:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 17:24:30 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/03ca1961dd98:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 17:24:30 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 17:24:30 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 17:24:31 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 17:24:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 17:24:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 17:24:31 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 17:28:38 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 17:28:38 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 17:28:39 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 17:28:39 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 17:28:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 17:28:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 898 ms. Found 2 JPA repository interfaces.
+2025-12-17 17:28:47 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 17:28:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 17:28:51 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 17:28:51 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 17:28:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 17:28:51 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12757 ms
+2025-12-17 17:28:53 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 17:28:54 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 17:28:54 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 17:28:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 17:28:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 17:28:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56da8847
+2025-12-17 17:28:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 17:28:59 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.44
@@ -97,62 +96,626 @@ test123
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-12-08 16:38:41 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-08 16:38:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-08 16:38:49 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-08 16:38:56 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
-2025-12-08 16:38:57 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-12-08 16:38:58 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
-2025-12-08 16:38:58 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
-2025-12-08 16:38:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:38:58 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
-2025-12-08 16:38:58 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
-2025-12-08 16:38:58 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
-2025-12-08 16:38:58 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
-2025-12-08 16:38:58 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
-2025-12-08 16:38:58 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
-2025-12-08 16:38:58 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
-2025-12-08 16:39:03 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
-2025-12-08 16:39:03 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
-2025-12-08 16:39:03 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-12-08 16:39:03 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765211943848 with initial instances count: 2
-2025-12-08 16:39:03 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
-2025-12-08 16:39:03 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765211943912, current=UP, previous=STARTING]
-2025-12-08 16:39:03 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/2fec3f73ae95:FLIGHT-MICROSERVICE: registering service...
-2025-12-08 16:39:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-12-08 16:39:04 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
-2025-12-08 16:39:04 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 61.387 seconds (process running for 69.649)
-2025-12-08 16:39:04 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/2fec3f73ae95:FLIGHT-MICROSERVICE - registration status: 204
-2025-12-08 16:43:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:48:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:53:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 16:58:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:03:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:08:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:13:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:18:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:23:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:28:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:33:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:38:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:43:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:48:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:53:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 17:58:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:03:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:08:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:13:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:18:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:23:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:28:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:33:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:38:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:43:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:48:57 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:53:57 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 18:58:57 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 19:03:57 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 19:08:57 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 19:13:57 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 19:18:57 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2025-12-08 19:23:57 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:29:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 17:29:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 17:29:07 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 17:29:13 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 17:29:14 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 17:29:15 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 17:29:16 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 17:29:16 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:29:16 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 17:29:16 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 17:29:16 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 17:29:16 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 17:29:16 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 17:29:16 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 17:29:16 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 17:29:20 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 17:29:20 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 17:29:20 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 17:29:20 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765992560444 with initial instances count: 2
+2025-12-17 17:29:20 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 17:29:20 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765992560509, current=UP, previous=STARTING]
+2025-12-17 17:29:20 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/55a684b9fd24:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 17:29:20 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 17:29:20 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 17:29:21 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 55.05 seconds (process running for 58.159)
+2025-12-17 17:29:21 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/55a684b9fd24:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 17:32:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-17 17:32:10 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-17 17:32:10 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2025-12-17 17:34:16 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:39:16 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:44:16 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:47:36 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 17:47:36 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765993656204, current=DOWN, previous=UP]
+2025-12-17 17:47:36 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/55a684b9fd24:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 17:47:36 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 17:47:36 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 17:47:36 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 17:47:36 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/55a684b9fd24:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 17:47:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 17:47:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 17:47:36 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 17:49:22 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 17:49:22 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 17:49:22 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 17:49:22 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 17:49:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 17:49:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1296 ms. Found 2 JPA repository interfaces.
+2025-12-17 17:49:29 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 17:49:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 17:49:33 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 17:49:33 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 17:49:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 17:49:33 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10813 ms
+2025-12-17 17:49:34 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 17:49:35 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 17:49:35 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 17:49:38 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 17:49:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 17:49:39 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54737322
+2025-12-17 17:49:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 17:49:40 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-17 17:49:48 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 17:49:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 17:49:51 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 17:49:54 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 17:49:54 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 17:49:54 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 17:49:54 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 17:49:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:49:54 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 17:49:54 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 17:49:54 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 17:49:54 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 17:49:54 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 17:49:54 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 17:49:54 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 17:49:56 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 17:49:56 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 17:49:56 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 17:49:56 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765993796362 with initial instances count: 2
+2025-12-17 17:49:56 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 17:49:56 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765993796385, current=UP, previous=STARTING]
+2025-12-17 17:49:56 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/c6454627aaeb:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 17:49:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 17:49:56 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 17:49:56 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 39.208 seconds (process running for 40.547)
+2025-12-17 17:49:56 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/c6454627aaeb:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 17:54:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 17:59:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:04:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:07:13 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 18:07:13 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765994833418, current=DOWN, previous=UP]
+2025-12-17 18:07:13 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/c6454627aaeb:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:07:13 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 18:07:13 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/c6454627aaeb:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:07:13 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 18:07:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:07:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 18:07:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 18:07:13 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 18:08:58 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 18:08:58 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 18:08:58 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 18:08:58 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 18:09:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 18:09:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 982 ms. Found 2 JPA repository interfaces.
+2025-12-17 18:09:04 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 18:09:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 18:09:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 18:09:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 18:09:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 18:09:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9730 ms
+2025-12-17 18:09:09 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 18:09:09 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 18:09:09 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 18:09:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 18:09:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 18:09:11 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70ce2fb2
+2025-12-17 18:09:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 18:09:12 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-17 18:09:16 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 18:09:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:09:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 18:09:23 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 18:09:23 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 18:09:23 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 18:09:23 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 18:09:23 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:09:23 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 18:09:23 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 18:09:23 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 18:09:23 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 18:09:23 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 18:09:23 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 18:09:23 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 18:09:25 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 18:09:25 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 18:09:25 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 18:09:25 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765994965549 with initial instances count: 2
+2025-12-17 18:09:25 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 18:09:25 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765994965585, current=UP, previous=STARTING]
+2025-12-17 18:09:25 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/dd9e42153373:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:09:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 18:09:25 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 18:09:25 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 35.112 seconds (process running for 36.558)
+2025-12-17 18:09:26 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/dd9e42153373:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:14:23 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:17:15 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 18:17:15 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765995435260, current=DOWN, previous=UP]
+2025-12-17 18:17:15 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/dd9e42153373:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:17:15 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/dd9e42153373:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:17:15 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 18:17:15 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 18:17:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:17:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 18:17:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 18:17:15 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 18:19:25 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 18:19:25 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 18:19:25 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 18:19:25 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 18:19:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 18:19:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1454 ms. Found 2 JPA repository interfaces.
+2025-12-17 18:19:34 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 18:19:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 18:19:37 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 18:19:37 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 18:19:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 18:19:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12394 ms
+2025-12-17 18:19:39 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 18:19:39 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 18:19:39 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 18:19:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 18:19:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 18:19:42 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c02a007
+2025-12-17 18:19:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 18:19:43 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-17 18:19:49 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 18:19:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:19:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 18:19:59 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 18:19:59 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 18:20:00 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 18:20:00 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 18:20:00 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:20:00 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 18:20:00 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 18:20:00 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 18:20:00 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 18:20:00 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 18:20:00 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 18:20:00 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 18:20:02 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 18:20:02 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 18:20:02 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 18:20:02 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765995602815 with initial instances count: 2
+2025-12-17 18:20:02 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 18:20:02 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765995602853, current=UP, previous=STARTING]
+2025-12-17 18:20:02 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/80a6c7d310cf:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:20:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 18:20:03 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 18:20:03 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 49.918 seconds (process running for 57.594)
+2025-12-17 18:20:03 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/80a6c7d310cf:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:24:33 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 18:24:33 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765995873034, current=DOWN, previous=UP]
+2025-12-17 18:24:33 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 18:24:33 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/80a6c7d310cf:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:24:33 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/80a6c7d310cf:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:24:33 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 18:24:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:24:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 18:24:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 18:24:33 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 18:26:36 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 18:26:36 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 18:26:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 18:26:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 18:26:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 18:26:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1034 ms. Found 2 JPA repository interfaces.
+2025-12-17 18:26:43 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 18:26:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 18:26:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 18:26:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 18:26:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 18:26:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10457 ms
+2025-12-17 18:26:48 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 18:26:48 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 18:26:48 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 18:26:50 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 18:26:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 18:26:51 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7323c38c
+2025-12-17 18:26:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 18:26:52 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-17 18:26:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 18:26:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:27:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 18:27:04 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 18:27:05 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 18:27:05 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 18:27:05 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 18:27:05 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:27:05 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 18:27:05 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 18:27:05 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 18:27:05 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 18:27:05 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 18:27:05 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 18:27:05 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 18:27:08 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 18:27:08 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 18:27:08 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 18:27:08 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765996028936 with initial instances count: 2
+2025-12-17 18:27:08 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 18:27:08 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765996028997, current=UP, previous=STARTING]
+2025-12-17 18:27:09 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/b8b31c48c5da:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:27:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 18:27:09 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 18:27:09 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 41.607 seconds (process running for 45.929)
+2025-12-17 18:27:09 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/b8b31c48c5da:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:30:32 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 18:30:32 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765996232055, current=DOWN, previous=UP]
+2025-12-17 18:30:32 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/b8b31c48c5da:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:30:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 18:30:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 18:30:32 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/b8b31c48c5da:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:30:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:30:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 18:30:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 18:30:32 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 18:32:43 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 18:32:43 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 18:32:43 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 18:32:43 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 18:32:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 18:32:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1099 ms. Found 2 JPA repository interfaces.
+2025-12-17 18:32:51 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 18:32:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 18:32:53 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 18:32:53 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 18:32:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 18:32:53 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9516 ms
+2025-12-17 18:32:54 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 18:32:55 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 18:32:55 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 18:32:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 18:32:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 18:32:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c02a007
+2025-12-17 18:32:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 18:32:59 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-17 18:33:02 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 18:33:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:33:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 18:33:08 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 18:33:09 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 18:33:09 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 18:33:09 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 18:33:09 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:33:09 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 18:33:09 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 18:33:09 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 18:33:09 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 18:33:09 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 18:33:09 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 18:33:09 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 18:33:12 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 18:33:12 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 18:33:12 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 18:33:12 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765996392269 with initial instances count: 2
+2025-12-17 18:33:12 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 18:33:12 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765996392292, current=UP, previous=STARTING]
+2025-12-17 18:33:12 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/66ee88a94db5:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:33:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 18:33:12 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 18:33:12 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 36.787 seconds (process running for 38.418)
+2025-12-17 18:33:12 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/66ee88a94db5:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:38:09 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:39:49 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 18:39:49 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765996789149, current=DOWN, previous=UP]
+2025-12-17 18:39:49 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/66ee88a94db5:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:39:49 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 18:39:49 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/66ee88a94db5:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:39:49 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 18:39:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:39:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 18:39:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 18:39:49 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 18:41:36 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 18:41:36 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 18:41:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 18:41:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 18:41:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 18:41:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 795 ms. Found 2 JPA repository interfaces.
+2025-12-17 18:41:43 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 18:41:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 18:41:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 18:41:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 18:41:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 18:41:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9486 ms
+2025-12-17 18:41:47 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 18:41:47 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 18:41:48 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 18:41:50 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 18:41:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 18:41:51 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3395c2a7
+2025-12-17 18:41:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 18:41:52 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-17 18:41:58 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 18:41:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:42:01 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 18:42:04 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 18:42:04 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 18:42:04 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 18:42:04 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 18:42:04 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:42:04 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 18:42:04 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 18:42:04 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 18:42:04 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 18:42:04 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 18:42:04 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 18:42:04 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 18:42:06 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 18:42:06 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 18:42:06 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 18:42:06 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765996926394 with initial instances count: 2
+2025-12-17 18:42:06 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 18:42:06 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765996926425, current=UP, previous=STARTING]
+2025-12-17 18:42:06 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/b4634a672d0c:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:42:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 18:42:06 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 18:42:06 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 39.008 seconds (process running for 40.781)
+2025-12-17 18:42:06 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/b4634a672d0c:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:47:04 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:50:53 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 18:50:53 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765997453400, current=DOWN, previous=UP]
+2025-12-17 18:50:53 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/b4634a672d0c:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:50:53 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 18:50:53 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/b4634a672d0c:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:50:53 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 18:50:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:50:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 18:50:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 18:50:53 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 18:52:41 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 18:52:41 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 18:52:41 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 18:52:41 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 18:52:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 18:52:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 477 ms. Found 2 JPA repository interfaces.
+2025-12-17 18:52:45 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 18:52:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 18:52:49 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 18:52:49 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 18:52:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 18:52:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8400 ms
+2025-12-17 18:52:52 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 18:52:52 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 18:52:52 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 18:52:54 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 18:52:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 18:52:55 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7323c38c
+2025-12-17 18:52:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 18:52:55 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-17 18:52:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 18:52:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 18:53:02 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 18:53:05 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 18:53:05 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 18:53:05 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 18:53:06 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 18:53:06 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 18:53:06 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 18:53:06 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 18:53:06 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 18:53:06 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 18:53:06 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 18:53:06 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 18:53:06 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 18:53:08 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 18:53:08 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 18:53:08 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 18:53:08 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765997588318 with initial instances count: 2
+2025-12-17 18:53:08 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 18:53:08 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765997588356, current=UP, previous=STARTING]
+2025-12-17 18:53:08 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/1737d380e1cd:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 18:53:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 18:53:08 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 18:53:08 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 30.866 seconds (process running for 32.23)
+2025-12-17 18:53:08 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/1737d380e1cd:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 18:58:06 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 19:01:00 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 19:01:00 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765998060856, current=DOWN, previous=UP]
+2025-12-17 19:01:00 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/1737d380e1cd:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 19:01:00 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 19:01:00 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 19:01:00 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/1737d380e1cd:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 19:01:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 19:01:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 19:01:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 19:01:00 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 19:13:47 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 19:13:47 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 19:13:49 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 19:13:49 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 19:14:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 19:14:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1256 ms. Found 2 JPA repository interfaces.
+2025-12-17 19:14:04 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 19:14:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 19:14:08 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 19:14:08 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 19:14:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 19:14:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 19897 ms
+2025-12-17 19:14:12 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 19:14:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 19:14:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 19:14:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 19:14:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 19:14:17 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c6c84fa
+2025-12-17 19:14:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 19:14:18 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-17 19:14:23 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 19:14:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 19:14:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 19:14:31 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 19:14:32 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 19:14:32 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 19:14:32 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 19:14:32 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 19:14:33 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 19:14:33 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 19:14:33 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 19:14:33 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 19:14:33 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 19:14:33 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 19:14:33 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 19:14:36 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 19:14:36 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 19:14:36 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 19:14:36 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1765998876418 with initial instances count: 2
+2025-12-17 19:14:36 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 19:14:36 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765998876443, current=UP, previous=STARTING]
+2025-12-17 19:14:36 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/313cd766d153:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 19:14:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 19:14:36 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 19:14:37 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/313cd766d153:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 19:14:37 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 66.132 seconds (process running for 76.651)
+2025-12-17 19:19:33 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 19:24:33 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 19:25:39 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 19:25:39 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1765999539679, current=DOWN, previous=UP]
+2025-12-17 19:25:39 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/313cd766d153:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 19:25:39 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 19:25:39 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/313cd766d153:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 19:25:39 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 19:25:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 19:25:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 19:25:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 19:25:39 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-17 19:37:27 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-17 19:37:27 INFO  c.f.FlightMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-17 19:37:28 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-17 19:37:28 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=74fd5769d2a5f60859253cb70c745355bccc3a1b, state=null
+2025-12-17 19:37:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-17 19:37:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1266 ms. Found 2 JPA repository interfaces.
+2025-12-17 19:37:37 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-17 19:37:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-17 19:37:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 19:37:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-17 19:37:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-17 19:37:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13512 ms
+2025-12-17 19:37:44 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-17 19:37:45 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-17 19:37:45 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-17 19:37:49 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 19:37:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 19:37:51 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79777da7
+2025-12-17 19:37:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 19:37:51 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-17 19:37:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-17 19:38:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 19:38:05 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 19:38:10 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-17 19:38:10 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-17 19:38:10 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-17 19:38:10 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-17 19:38:10 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 19:38:10 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-17 19:38:10 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-17 19:38:10 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-17 19:38:10 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-17 19:38:10 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-17 19:38:10 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-17 19:38:10 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-17 19:38:14 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-17 19:38:14 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-17 19:38:14 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-17 19:38:14 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1766000294244 with initial instances count: 2
+2025-12-17 19:38:14 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-17 19:38:14 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1766000294272, current=UP, previous=STARTING]
+2025-12-17 19:38:14 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/ff3a83196a81:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 19:38:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-17 19:38:14 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-17 19:38:14 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 56.567 seconds (process running for 65.082)
+2025-12-17 19:38:14 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/ff3a83196a81:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 19:43:10 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 19:44:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-17 19:44:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-17 19:44:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-12-17 19:48:10 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-17 19:53:07 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-17 19:53:07 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1766001187233, current=DOWN, previous=UP]
+2025-12-17 19:53:07 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/ff3a83196a81:FLIGHT-MICROSERVICE: registering service...
+2025-12-17 19:53:07 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 19:53:07 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/ff3a83196a81:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-17 19:53:07 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 19:53:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 19:53:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 19:53:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-17 19:53:07 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...

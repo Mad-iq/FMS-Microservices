@@ -8,4 +8,5 @@ public interface BookingService {
     Map<String,Object> getTicketByPnr(String pnr);
     Map<String,Object> getBookingHistory(String email);
     Map<String,Object> cancelBooking(String pnr);
+    Map<String, Object> getBookingHistoryWithDetails(String email);
 }
