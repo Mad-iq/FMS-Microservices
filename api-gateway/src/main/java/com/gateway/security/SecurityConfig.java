@@ -48,7 +48,8 @@ public class SecurityConfig {
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
                 .authorizeExchange(ex -> ex
                 		.pathMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-                        .pathMatchers("/auth/**").permitAll()
+                        .pathMatchers("/auth/register", "/auth/login").permitAll()
+                        .pathMatchers(HttpMethod.PUT,"/auth/change-password").authenticated()
                         .pathMatchers("/FLIGHT-MICROSERVICE/api/flight/search").permitAll()
                         .pathMatchers(HttpMethod.POST, "/FLIGHT-MICROSERVICE/api/flight").hasRole("ADMIN")
                         .pathMatchers("/BOOKING-MICROSERVICE/api/flight/booking/**").hasRole("USER")
