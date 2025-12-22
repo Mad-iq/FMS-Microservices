@@ -75,8 +75,10 @@ public class AuthController {
             return ResponseEntity.status(401).body(Map.of("error", "Invalid credentials"));
         }
 
-        String token = jwtUtil.generateToken(username, userOpt.get().getRole());
-        return ResponseEntity.ok(Map.of("token", token));
+        User user = userOpt.get();
+        String token = jwtUtil.generateToken(user.getUsername(), user.getRole());
+        return ResponseEntity.ok(
+                Map.of("token", token,"username", user.getUsername(),"email", user.getEmail(),"role", user.getRole() ));
     }
     
     @PutMapping("/change-password")
