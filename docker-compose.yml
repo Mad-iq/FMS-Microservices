@@ -2,7 +2,6 @@ services:
 
   mysql:
     image: mysql:8.0
-    container_name: mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: De@763071
@@ -20,7 +19,6 @@ services:
 
   rabbitmq:
     image: rabbitmq:3-management
-    container_name: rabbitmq
     restart: unless-stopped
     environment:
       RABBITMQ_DEFAULT_USER: fms_user
@@ -35,32 +33,27 @@ services:
       test: ["CMD", "rabbitmqctl", "status"]
       interval: 15s
       timeout: 10s
-      retries: 10
+      retries: 15
 
   service-registry:
     build: ./service_registry
-    container_name: service-registry
     ports:
       - "8761:8761"
-    volumes:
-      - ./logs/service-registry:/app/logs
     networks:
       - fms-net
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8761/actuator/health"]
       interval: 10s
       timeout: 5s
-      retries: 5
+      retries: 15
+      start_period: 60s
 
   config-server:
     build:
       context: ./config-server-quizapp
       dockerfile: Dockerfile
-    container_name: config-server
     ports:
       - "8888:8888"
-    volumes:
-      - ./logs/config-server:/app/logs
     depends_on:
       service-registry:
         condition: service_healthy
@@ -76,11 +69,8 @@ services:
 
   api-gateway:
     build: ./api-gateway
-    container_name: api-gateway
     ports:
       - "8765:8765"
-    volumes:
-      - ./logs/api-gateway:/app/logs
     depends_on:
       mysql:
         condition: service_healthy
@@ -97,11 +87,8 @@ services:
 
   flight-microservice:
     build: ./flight-microservice
-    container_name: flight-microservice
     ports:
       - "8081:8081"
-    volumes:
-      - ./logs/flight:/app/logs
     depends_on:
       config-server:
         condition: service_healthy
@@ -119,11 +106,8 @@ services:
 
   booking-microservice:
     build: ./booking-microservice
-    container_name: booking-microservice
     ports:
       - "8082:8082"
-    volumes:
-      - ./logs/booking:/app/logs
     depends_on:
       config-server:
         condition: service_healthy
@@ -143,11 +127,8 @@ services:
 
   notification-microservice:
     build: ./notification-microservice
-    container_name: notification-microservice
     ports:
       - "8083:8083"
-    volumes:
-      - ./logs/notification:/app/logs
     depends_on:
       rabbitmq:
         condition: service_healthy

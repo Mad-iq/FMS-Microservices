@@ -73,3 +73,78 @@
 2025-12-26 17:06:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-12-26 17:06:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2025-12-26 17:06:04 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-26 18:57:12 INFO  c.f.FlightMicroserviceApplication - Starting FlightMicroserviceApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-26 18:57:12 INFO  c.f.FlightMicroserviceApplication - The following 1 profile is active: "docker"
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[default], label=null, version=342e6e525068a423d89e95a86cb3c62eb06394df, state=null
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/FLIGHT-MICROSERVICE/default": Connection refused. Will be trying the next url if available
+2025-12-26 18:57:12 WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@578524c3 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/FLIGHT-MICROSERVICE/default": Connection refused
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-MICROSERVICE, profiles=[docker], label=null, version=342e6e525068a423d89e95a86cb3c62eb06394df, state=null
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/FLIGHT-MICROSERVICE/docker": Connection refused. Will be trying the next url if available
+2025-12-26 18:57:12 WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@1ee4730 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'docker']): I/O error on GET request for "http://localhost:8888/FLIGHT-MICROSERVICE/docker": Connection refused
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2025-12-26 18:57:12 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/FLIGHT-MICROSERVICE/default": Connection refused. Will be trying the next url if available
+2025-12-26 18:57:12 WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@59a67c3a uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/FLIGHT-MICROSERVICE/default": Connection refused
+2025-12-26 18:57:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-26 18:57:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1343 ms. Found 2 JPA repository interfaces.
+2025-12-26 18:57:22 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1a76e8fa-e84d-3823-aa79-e95fbdec0179
+2025-12-26 18:57:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-26 18:57:28 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 18:57:28 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-26 18:57:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-26 18:57:29 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 16495 ms
+2025-12-26 18:57:31 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-26 18:57:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-26 18:57:32 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-26 18:57:35 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-26 18:57:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-26 18:57:38 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a510e0e
+2025-12-26 18:57:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-26 18:57:38 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-26 18:57:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-26 18:57:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 18:57:50 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-26 18:57:54 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-26 18:57:54 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-26 18:57:54 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-26 18:57:54 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-26 18:57:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-26 18:57:55 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-12-26 18:57:55 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-12-26 18:57:55 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-12-26 18:57:55 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-12-26 18:57:55 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-12-26 18:57:55 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-12-26 18:57:55 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-12-26 18:57:58 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-12-26 18:57:58 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-12-26 18:57:58 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-26 18:57:58 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1766775478501 with initial instances count: 1
+2025-12-26 18:57:58 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHT-MICROSERVICE with eureka with status UP
+2025-12-26 18:57:58 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1766775478547, current=UP, previous=STARTING]
+2025-12-26 18:57:58 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/ff0df5e5ee1f:FLIGHT-MICROSERVICE: registering service...
+2025-12-26 18:57:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-26 18:57:58 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-12-26 18:57:58 INFO  c.f.FlightMicroserviceApplication - Started FlightMicroserviceApplication in 64.177 seconds (process running for 71.063)
+2025-12-26 18:57:58 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/ff0df5e5ee1f:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-26 19:02:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-12-26 19:06:21 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHT-MICROSERVICE with eureka with status DOWN
+2025-12-26 19:06:21 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1766775981874, current=DOWN, previous=UP]
+2025-12-26 19:06:21 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/ff0df5e5ee1f:FLIGHT-MICROSERVICE: registering service...
+2025-12-26 19:06:21 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 19:06:21 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_FLIGHT-MICROSERVICE/ff0df5e5ee1f:FLIGHT-MICROSERVICE - registration status: 204
+2025-12-26 19:06:21 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 19:06:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-26 19:06:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-26 19:06:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-26 19:06:22 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
