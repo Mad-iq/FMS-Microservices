@@ -1,0 +1,263 @@
+2025-12-26 16:26:07 INFO  c.e.d.ServiceRegistryQuizappApplication - Starting ServiceRegistryQuizappApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-26 16:26:07 INFO  c.e.d.ServiceRegistryQuizappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 16:26:10 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6bbb96d6-52a4-398e-8f64-e461d2cecbb1
+2025-12-26 16:26:11 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+2025-12-26 16:26:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 16:26:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 16:26:11 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3602 ms
+2025-12-26 16:26:13 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-12-26 16:26:13 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-12-26 16:26:14 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-12-26 16:26:14 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-12-26 16:26:14 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-26 16:26:16 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-26 16:26:16 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-26 16:26:16 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-26 16:26:16 INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-12-26 16:26:16 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1766766376301 with initial instances count: 0
+2025-12-26 16:26:16 INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-12-26 16:26:16 WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-26 16:26:16 INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-12-26 16:26:16 INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-12-26 16:26:16 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 16:26:16 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICE_REGISTRY_QUIZAPP with eureka with status UP
+2025-12-26 16:26:16 INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-12-26 16:26:16 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-12-26 16:26:16 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-12-26 16:26:16 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-12-26 16:26:16 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-12-26 16:26:16 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-12-26 16:26:16 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path '/'
+2025-12-26 16:26:16 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-12-26 16:26:16 INFO  c.e.d.ServiceRegistryQuizappApplication - Started ServiceRegistryQuizappApplication in 11.097 seconds (process running for 13.846)
+2025-12-26 16:26:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-26 16:26:23 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-26 16:26:23 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-12-26 16:27:16 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-12-26 16:28:16 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2025-12-26 16:29:16 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2025-12-26 16:30:16 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 17ms
+2025-12-26 16:31:16 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 19ms
+2025-12-26 16:32:16 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 17ms
+2025-12-26 16:32:54 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SERVICE_REGISTRY_QUIZAPP with eureka with status DOWN
+2025-12-26 16:32:54 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 16:32:54 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 16:32:54 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+2025-12-26 16:32:54 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 16:32:54 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 16:32:54 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+2025-12-26 16:32:55 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 16:32:55 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 16:32:55 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-26 16:32:55 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-12-26 16:33:26 INFO  c.e.d.ServiceRegistryQuizappApplication - Starting ServiceRegistryQuizappApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-26 16:33:26 INFO  c.e.d.ServiceRegistryQuizappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 16:33:45 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6bbb96d6-52a4-398e-8f64-e461d2cecbb1
+2025-12-26 16:33:49 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+2025-12-26 16:33:50 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 16:33:50 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 16:33:50 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 22981 ms
+2025-12-26 16:34:00 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-12-26 16:34:00 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-12-26 16:34:04 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-12-26 16:34:04 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-12-26 16:34:06 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-26 16:34:13 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-26 16:34:13 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-26 16:34:13 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-26 16:34:13 INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-12-26 16:34:13 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1766766853587 with initial instances count: 0
+2025-12-26 16:34:13 INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-12-26 16:34:13 WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-26 16:34:13 INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-12-26 16:34:13 INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-12-26 16:34:14 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 16:34:14 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICE_REGISTRY_QUIZAPP with eureka with status UP
+2025-12-26 16:34:14 INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-12-26 16:34:14 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-12-26 16:34:14 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-12-26 16:34:14 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-12-26 16:34:14 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-12-26 16:34:14 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-12-26 16:34:14 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path '/'
+2025-12-26 16:34:14 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-12-26 16:34:14 INFO  c.e.d.ServiceRegistryQuizappApplication - Started ServiceRegistryQuizappApplication in 59.602 seconds (process running for 68.755)
+2025-12-26 16:34:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-26 16:34:21 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-26 16:34:21 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-12-26 16:35:14 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-12-26 16:36:14 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2025-12-26 16:37:14 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2025-12-26 16:38:03 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SERVICE_REGISTRY_QUIZAPP with eureka with status DOWN
+2025-12-26 16:38:03 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 16:38:03 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 16:38:03 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+2025-12-26 16:38:03 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 16:38:03 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 16:38:03 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+2025-12-26 16:38:03 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 16:38:03 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 16:38:03 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-26 16:38:03 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-12-26 16:38:55 INFO  c.e.d.ServiceRegistryQuizappApplication - Starting ServiceRegistryQuizappApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-26 16:38:55 INFO  c.e.d.ServiceRegistryQuizappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 16:39:06 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6bbb96d6-52a4-398e-8f64-e461d2cecbb1
+2025-12-26 16:39:08 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+2025-12-26 16:39:08 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 16:39:08 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 16:39:08 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 11718 ms
+2025-12-26 16:39:14 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-12-26 16:39:14 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-12-26 16:39:15 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-12-26 16:39:15 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-12-26 16:39:16 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-26 16:39:22 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-26 16:39:22 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-26 16:39:22 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-26 16:39:22 INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-12-26 16:39:22 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1766767162838 with initial instances count: 0
+2025-12-26 16:39:23 INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-12-26 16:39:23 WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-26 16:39:23 INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-12-26 16:39:23 INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-12-26 16:39:23 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 16:39:24 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICE_REGISTRY_QUIZAPP with eureka with status UP
+2025-12-26 16:39:24 INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-12-26 16:39:24 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-12-26 16:39:24 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-12-26 16:39:24 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-12-26 16:39:24 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path '/'
+2025-12-26 16:39:24 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-12-26 16:39:24 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-12-26 16:39:24 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-12-26 16:39:24 INFO  c.e.d.ServiceRegistryQuizappApplication - Started ServiceRegistryQuizappApplication in 35.911 seconds (process running for 43.263)
+2025-12-26 16:40:24 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-12-26 16:41:24 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+2025-12-26 16:41:30 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SERVICE_REGISTRY_QUIZAPP with eureka with status DOWN
+2025-12-26 16:41:30 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 16:41:30 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 16:41:30 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+2025-12-26 16:41:30 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 16:41:30 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 16:41:30 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+2025-12-26 16:41:30 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 16:41:30 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 16:41:30 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-26 16:41:30 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-12-26 16:41:50 INFO  c.e.d.ServiceRegistryQuizappApplication - Starting ServiceRegistryQuizappApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-26 16:41:50 INFO  c.e.d.ServiceRegistryQuizappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 16:42:07 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6bbb96d6-52a4-398e-8f64-e461d2cecbb1
+2025-12-26 16:42:12 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+2025-12-26 16:42:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 16:42:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 16:42:12 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 21190 ms
+2025-12-26 16:42:45 INFO  c.e.d.ServiceRegistryQuizappApplication - Starting ServiceRegistryQuizappApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-26 16:42:45 INFO  c.e.d.ServiceRegistryQuizappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 16:43:08 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6bbb96d6-52a4-398e-8f64-e461d2cecbb1
+2025-12-26 16:43:12 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+2025-12-26 16:43:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 16:43:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 16:43:13 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 26393 ms
+2025-12-26 16:43:29 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-12-26 16:43:29 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-12-26 16:43:30 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-12-26 16:43:30 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-12-26 16:43:32 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-26 16:43:38 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-26 16:43:39 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-26 16:43:39 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-26 16:43:39 INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-12-26 16:43:39 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1766767419724 with initial instances count: 0
+2025-12-26 16:43:40 INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-12-26 16:43:40 WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-26 16:43:40 INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-12-26 16:43:40 INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-12-26 16:43:40 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 16:43:41 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICE_REGISTRY_QUIZAPP with eureka with status UP
+2025-12-26 16:43:41 INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-12-26 16:43:41 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-12-26 16:43:41 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-12-26 16:43:41 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-12-26 16:43:41 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-12-26 16:43:41 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-12-26 16:43:41 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path '/'
+2025-12-26 16:43:41 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-12-26 16:43:41 INFO  c.e.d.ServiceRegistryQuizappApplication - Started ServiceRegistryQuizappApplication in 64.36 seconds (process running for 71.727)
+2025-12-26 16:43:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-26 16:43:46 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-26 16:43:46 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2025-12-26 16:43:48 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SERVICE_REGISTRY_QUIZAPP with eureka with status DOWN
+2025-12-26 16:43:48 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 16:43:48 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 16:43:48 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+2025-12-26 16:43:48 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 16:43:48 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 16:43:49 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+2025-12-26 16:43:49 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 16:43:49 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 16:43:49 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-26 16:43:49 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-12-26 16:54:14 INFO  c.e.d.ServiceRegistryQuizappApplication - Starting ServiceRegistryQuizappApplication v3.1.0 using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2025-12-26 16:54:14 INFO  c.e.d.ServiceRegistryQuizappApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-26 16:54:23 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6bbb96d6-52a4-398e-8f64-e461d2cecbb1
+2025-12-26 16:54:24 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+2025-12-26 16:54:24 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-26 16:54:24 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-26 16:54:24 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 9405 ms
+2025-12-26 16:54:31 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-12-26 16:54:31 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-12-26 16:54:33 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-12-26 16:54:33 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-12-26 16:54:34 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-26 16:54:42 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-26 16:54:42 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-12-26 16:54:42 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-12-26 16:54:42 INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-12-26 16:54:42 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1766768082702 with initial instances count: 0
+2025-12-26 16:54:43 INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-12-26 16:54:43 WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-26 16:54:43 INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-12-26 16:54:43 INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-12-26 16:54:43 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-26 16:54:43 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SERVICE_REGISTRY_QUIZAPP with eureka with status UP
+2025-12-26 16:54:43 INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-12-26 16:54:43 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-12-26 16:54:44 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-12-26 16:54:44 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-12-26 16:54:44 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-12-26 16:54:44 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-12-26 16:54:44 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path '/'
+2025-12-26 16:54:44 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-12-26 16:54:44 INFO  c.e.d.ServiceRegistryQuizappApplication - Started ServiceRegistryQuizappApplication in 38.319 seconds (process running for 45.756)
+2025-12-26 16:54:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-26 16:54:51 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-26 16:54:51 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-12-26 16:55:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-12-26 16:56:17 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance API-GATEWAY/0a1bead42320:api-gateway:8765 with status UP (replication=false)
+2025-12-26 16:56:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 24ms
+2025-12-26 16:57:32 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-MICROSERVICE/acfd223fbb27:FLIGHT-MICROSERVICE with status UP (replication=false)
+2025-12-26 16:57:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 17ms
+2025-12-26 16:58:36 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-MICROSERVICE/a655af8b871e:BOOKING-MICROSERVICE:8082 with status UP (replication=false)
+2025-12-26 16:58:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2025-12-26 16:59:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 15ms
+2025-12-26 17:00:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+2025-12-26 17:01:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+2025-12-26 17:02:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+2025-12-26 17:03:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+2025-12-26 17:04:42 WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2025-12-26 17:04:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+2025-12-26 17:05:44 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
+2025-12-26 17:06:04 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance API-GATEWAY/0a1bead42320:api-gateway:8765 with status DOWN (replication=false)
+2025-12-26 17:06:04 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-MICROSERVICE/a655af8b871e:BOOKING-MICROSERVICE:8082 with status DOWN (replication=false)
+2025-12-26 17:06:04 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-MICROSERVICE/acfd223fbb27:FLIGHT-MICROSERVICE with status DOWN (replication=false)
+2025-12-26 17:06:10 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SERVICE_REGISTRY_QUIZAPP with eureka with status DOWN
+2025-12-26 17:06:10 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-26 17:06:10 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-26 17:06:10 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+2025-12-26 17:06:10 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 17:06:10 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 17:06:10 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+2025-12-26 17:06:10 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-12-26 17:06:10 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-12-26 17:06:11 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-12-26 17:06:11 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

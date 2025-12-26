@@ -89,6 +89,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/gatewaydb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: root
+      SPRING_PROFILES_ACTIVE: docker 
       SPRING_DATASOURCE_PASSWORD: De@763071
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka/
     networks:
@@ -110,6 +111,7 @@ services:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: FLIGHT-MICROSERVICE
+      SPRING_PROFILES_ACTIVE: docker 
       SPRING_CONFIG_IMPORT: optional:configserver:http://config-server:8888
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka/
     networks:
@@ -133,6 +135,7 @@ services:
         condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: BOOKING-MICROSERVICE
+      SPRING_PROFILES_ACTIVE: docker 
       SPRING_CONFIG_IMPORT: optional:configserver:http://config-server:8888
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://service-registry:8761/eureka/
     networks:
@@ -151,6 +154,7 @@ services:
     environment:
       SPRING_RABBITMQ_HOST: rabbitmq
       SPRING_RABBITMQ_PORT: 5672
+      SPRING_PROFILES_ACTIVE: docker 
       SPRING_RABBITMQ_USERNAME: fms_user
       SPRING_RABBITMQ_PASSWORD: fms_password
       SPRING_RABBITMQ_VIRTUAL_HOST: /fms
