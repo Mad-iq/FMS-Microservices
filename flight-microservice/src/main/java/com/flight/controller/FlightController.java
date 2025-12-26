@@ -84,6 +84,11 @@ public class FlightController {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
         }
     }
+    
+    @GetMapping("/all")
+    public List<Map<String, Object>> getAllFlights(){
+    	return service.getAllFlights();
+    }
 
 }
 

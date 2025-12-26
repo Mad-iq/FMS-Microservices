@@ -6,6 +6,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import com.gateway.model.User;
 import com.gateway.repository.UserRepository;
+import java.time.LocalDateTime;
 
 @Service
 public class UserService {
@@ -32,6 +33,7 @@ public class UserService {
         String hashed = passwordEncoder.encode(rawPassword);
 
         User user = new User(username, email, hashed, role);
+        user.setLastPasswordChangedAt(LocalDateTime.now());
         return userRepository.save(user);
     }
 
@@ -50,6 +52,7 @@ public class UserService {
         }
         String hashedNewPassword = passwordEncoder.encode(newPassword);
         user.setPassword(hashedNewPassword);
+        user.setLastPasswordChangedAt(LocalDateTime.now());
         userRepository.save(user);
     }
 

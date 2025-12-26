@@ -15,6 +15,8 @@ import com.gateway.model.User;
 import com.gateway.security.JwtUtil;
 import com.gateway.service.UserService;
 import org.springframework.security.core.Authentication;
+import java.time.Duration;
+import java.time.LocalDateTime;
 
 
 @RestController
@@ -76,9 +78,10 @@ public class AuthController {
         }
 
         User user = userOpt.get();
-        String token = jwtUtil.generateToken(user.getUsername(), user.getRole());
+        boolean passwordExpired = isPasswordExpired(user);
+        String token = jwtUtil.generateToken(user.getUsername(), user.getRole(),passwordExpired);
         return ResponseEntity.ok(
-                Map.of("token", token,"username", user.getUsername(),"email", user.getEmail(),"role", user.getRole() ));
+                Map.of("token", token,"username", user.getUsername(),"email", user.getEmail(),"role", user.getRole(), "passwordExpired", passwordExpired));
     }
     
     @PutMapping("/change-password")
@@ -87,11 +90,10 @@ public class AuthController {
         String oldPassword = req.get("oldPassword");
         String newPassword = req.get("newPassword");
 
-        if (oldPassword == null || newPassword == null){
+        if (oldPassword == null ||newPassword == null){
             return ResponseEntity.badRequest().body(Map.of("error", "oldPassword and newPassword are required"));
         }
         String username = authentication.getName();
-
         try{
             userService.changePassword(username, oldPassword, newPassword);
             return ResponseEntity.ok(Map.of("message", "Password changed successfully"));
@@ -99,5 +101,10 @@ public class AuthController {
             return ResponseEntity.status(403).body(Map.of("error", ex.getMessage()));
         }
     }
+    
+    private boolean isPasswordExpired(User user) {
+        return Duration.between(user.getLastPasswordChangedAt(),LocalDateTime.now()).toDays() >= 90;
+    }
+
 
 }

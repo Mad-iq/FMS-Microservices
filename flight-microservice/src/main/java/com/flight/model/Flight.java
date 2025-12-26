@@ -37,7 +37,7 @@ public class Flight {
 
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-
+    private int totalSeats;
     private int availableSeats;
     private double ticketPrice;
 

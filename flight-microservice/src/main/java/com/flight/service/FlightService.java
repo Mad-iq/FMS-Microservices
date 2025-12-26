@@ -14,4 +14,5 @@ public interface FlightService {
     boolean releaseSeats(String flightId, List<String> seatNumbers);
     Map<String, Object> getFlightInfo(String flightId);
     List<Map<String, Object>> addMultipleFlights(List<AddFlightRequest> requests);
+    List<Map<String, Object>> getAllFlights();
 }

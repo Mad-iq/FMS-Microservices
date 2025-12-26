@@ -23,10 +23,11 @@ public class JwtUtil {
         return Keys.hmacShaKeyFor(secret.getBytes());
     }
 
-    public String generateToken(String username, String role) {
+    public String generateToken(String username, String role, boolean passwordExpired) {
         return Jwts.builder()
                 .setSubject(username)
                 .claim("role", role)
+                .claim("pwd_expired", passwordExpired)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + expirationMs))
                 .signWith(getSigningKey(), SignatureAlgorithm.HS256)
@@ -36,9 +37,9 @@ public class JwtUtil {
     public boolean validateToken(String token) {
         try {
             Jwts.parserBuilder()
-                    .setSigningKey(getSigningKey())  //gives the parser the secret key used to sign the JWT.
+                    .setSigningKey(getSigningKey())  
                     .build()
-                    .parseClaimsJws(token); //Checks signature matcheskey
+                    .parseClaimsJws(token); 
             return true;
         } catch (Exception ex) {
             return false;
@@ -61,6 +62,14 @@ public class JwtUtil {
                 .parseClaimsJws(token)
                 .getBody();
         return claims.get("role", String.class);
+    }
+    
+    public Claims extractAllClaims(String token) {
+        return Jwts.parserBuilder()
+                .setSigningKey(getSigningKey())
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
     }
 }
 

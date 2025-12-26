@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.ReactiveAuthenticationManager;
 import org.springframework.security.config.web.server.SecurityWebFiltersOrder;
 import org.springframework.security.config.web.server.ServerHttpSecurity;
 import org.springframework.security.web.server.SecurityWebFilterChain;
@@ -12,6 +13,9 @@ import org.springframework.security.web.server.context.NoOpServerSecurityContext
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.reactive.CorsWebFilter;
 import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
+import org.springframework.web.server.ServerWebExchange;
+
+import reactor.core.publisher.Mono;
 
 @Configuration
 public class SecurityConfig {
@@ -36,7 +40,12 @@ public class SecurityConfig {
     @Bean
     public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
 
-        JwtReactiveAuthenticationManager authManager = new JwtReactiveAuthenticationManager(jwtUtil);
+    	 ReactiveAuthenticationManager authManager =
+    		        authentication -> Mono.deferContextual(ctx -> {
+    		            ServerWebExchange exchange = ctx.get(ServerWebExchange.class);
+    		            return new JwtReactiveAuthenticationManager(jwtUtil, exchange)
+    		                    .authenticate(authentication);
+    		        });
         JwtServerAuthenticationConverter converter = new JwtServerAuthenticationConverter();
 
         //call auth manager and set context
@@ -52,6 +61,7 @@ public class SecurityConfig {
                         .pathMatchers(HttpMethod.PUT,"/auth/change-password").authenticated()
                         .pathMatchers("/FLIGHT-MICROSERVICE/api/flight/search").permitAll()
                         .pathMatchers(HttpMethod.POST, "/FLIGHT-MICROSERVICE/api/flight").hasRole("ADMIN")
+                        .pathMatchers(HttpMethod.GET, "/FLIGHT-MICROSERVICE/api/flight/all").hasRole("ADMIN")
                         .pathMatchers("/BOOKING-MICROSERVICE/api/flight/booking/**").hasRole("USER")
                         .pathMatchers("/BOOKING-MICROSERVICE/api/flight/ticket/**").hasRole("USER")
                         .pathMatchers("/BOOKING-MICROSERVICE/api/flight/booking/history/**").hasRole("USER")

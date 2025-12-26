@@ -45,6 +45,7 @@ public class FlightServiceImpl implements FlightService {
 
         LocalDateTime start = LocalDateTime.parse(req.getStartDate());
         LocalDateTime end = LocalDateTime.parse(req.getEndDate());
+        int totalseats = req.getAvailableSeats();
 
         String flightId = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
 
@@ -54,6 +55,7 @@ public class FlightServiceImpl implements FlightService {
         flight.setDestination(City.valueOf(req.getDestination().toUpperCase()));
         flight.setStartDate(start);
         flight.setEndDate(end);
+        flight.setTotalSeats(totalseats);
         flight.setAvailableSeats(req.getAvailableSeats());
         flight.setTicketPrice(req.getTicketPrice());
         flight.setMealStatus(req.isMealStatus() ? MealStatus.VEG : MealStatus.NONVEG);
@@ -172,8 +174,27 @@ public class FlightServiceImpl implements FlightService {
                 "airline", f.getAirline().getName(),
                 "startDate", f.getStartDate().toString(),
                 "price", f.getTicketPrice(),
+                "totalSeats", f.getTotalSeats(),
                 "availableSeats", f.getAvailableSeats(),
                 "availableSeatNumbers", f.getAvailableSeatNumbers()
         );
+    }
+    
+    @Override
+    public List<Map<String, Object>> getAllFlights(){
+    	List<Flight> flights= flightRepo.findAll();
+    	List<Map<String, Object>> response= new ArrayList<>();
+    	for(Flight flight: flights) {
+    		response.add(Map.of(
+    				"flightId",flight.getFlightId(),
+    				"airline", flight.getAirline().getName(),
+    				"source", flight.getSource().name(),
+    				"destination", flight.getDestination().name(),
+    				"startDateTime", flight.getStartDate().toString(),
+    				"endDateTime", flight.getEndDate().toString(),
+    				"price", flight.getTicketPrice(),
+    				"availableSeats", flight.getAvailableSeats()));
+    	}
+    	return response;
     }
 }
