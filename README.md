@@ -1,6 +1,6 @@
 # Flight Booking Microservices
 
-_(I have added the logs folder containing the docker logs for each individual service)_
+_(I have added the logs folder containing the docker logs for each individual service in my project)_
 
 ### A scalable Flight Management System built using Spring Boot Microservices, featuring flight search, booking, notifications, seat reservation, and distributed communication using Feign, RabbitMQ, Docker, Circuit Breaker, and MySQL.
 
